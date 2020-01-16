@@ -1,0 +1,105 @@
+<html>
+    <head></head>
+    <body>
+        <form action="informationform.php" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                <table>
+                    <tr>
+                        <td>Frist name</td>
+                        <td><input type="text" name="fristname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" name="lastname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td><input type="date" name="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <select id="gender" name="gender" required>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Account information</legend>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email"><br>(your email will be your username)</td>
+                    </tr>
+                    <tr>
+                        <td>Retype-Email</td>
+                        <td><input type="email" name="retype-email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" required><br>(min 8 char,1 number)</td>
+                    </tr>
+                    <tr>
+                        <td>Retype-Password</td>
+                        <td><input type="password" name="retype-password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Security question</td>
+                        <td>
+                            <select id="security question" name="securityquestion">
+                                <option value="your friendd name?">your friendd name?</option>
+                                <option value="your school name?">your school name</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Security answer</td>
+                        <td><input type="text" name="securityanswer"><br>(case insensative)</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Contact information</legend>
+                <table>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td>
+                            <select id="state" name="state">
+                                <option value="gujrat">Gujrat</option>
+                                <option value="punjab">Punjab</option>
+                                <option value="goa">Goa</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zip code</td>
+                        <td><input type="text" name="zipcode"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone no</td>
+                        <td><input type="text" name="phoneno"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table>
+                <tr>
+                    <td><button value="submit" name="submit">Submit</button></td>
+                    <td><button value="reset" name="reset" type="reset">Reset</button></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>

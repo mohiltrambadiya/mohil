@@ -1,0 +1,44 @@
+h1
+{
+    text-align:center;
+}
+p
+{
+    text-align:center;
+}
+.parent
+{
+    text-align: center;
+}
+.main
+{
+    display: inline-block;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 2px 2px 2px 2px darkgray;
+}
+.content
+{
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.image
+{
+    margin: auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+}
+.name
+{
+    text-align: center;
+}
+.designation
+{
+    text-align: center;
+}

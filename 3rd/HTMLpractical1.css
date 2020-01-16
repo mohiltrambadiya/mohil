@@ -1,0 +1,12 @@
+.main{
+    margin: 10px;
+}
+img{
+    height: 315px;
+    width: 215px;
+}
+.caption{
+    background-color: grey;
+    color: lightskyblue;
+    text-align: center;
+}

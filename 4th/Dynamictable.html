@@ -1,0 +1,22 @@
+<html>
+    <head>      
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+            </tr>
+            <tbody id='dynamictable'>
+
+            </tbody>
+        </table>
+    </body>
+    <script>
+        var names=['Rahul','virat','Dhoni','Sikhar','Rohit'];
+        for(var i=0;i<names.length;i++)
+        {
+            document.getElementById("dynamictable").innerHTML+="<tr><td>"+(i+1)+"</td><td>"+names[i]+"</td></tr>";
+        }
+    </script>
+</html>

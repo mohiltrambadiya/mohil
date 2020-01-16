@@ -1,0 +1,58 @@
+<html>
+    <head></head>
+    <body>
+            <ul>
+                wh0 is indian currant cricket team caption? 
+                <li><input type="radio" name="question1" value="Dhoni">Dhoni</li>
+                <li><input type="radio" name="question1" value="virat">viart</li>
+                <li><input type="radio" name="question1" value="rohit">rohit</li>
+                <li><input type="radio" name="question1" value="schine">schine</li>
+             </ul>
+             <ul>
+                 what is indian national game? 
+                 <li><input type="radio" name="question2" value="Cricket">Cricket</li>
+                 <li><input type="radio" name="question2" value="Hockey">Hockey</li>
+                 <li><input type="radio"  name="question2" value="Football">Football</li>
+                 <li><input type="radio"  name="question2" value="kabbdi">kabbdi</li>
+              </ul>
+              <ul>
+                 capital of india? 
+                 <li><input type="radio" name="question3" value="delhi">delhi</li>
+                 <li><input type="radio" name="question3" value="Mumbai">Mumbai</li>
+                 <li><input type="radio"  name="question3" value="Ahemdabad">Ahemdabad</li>
+                 <li><input type="radio"  name="question3" value="Kolkata">Kolkata</li>
+              </ul>
+              <button type="button" onclick="storedovalue()">Click Me!</button>
+    </body>
+    <script>
+        var ans =['virat','Hockey','delhi'];
+        
+        function storedovalue()
+        {
+            var marks=0;
+            var selectedAns = [];
+            var flag=false;
+            for(var i=0;i<3;i++){
+                var datas = document.getElementsByName('question'+(i+1));
+                for(var j=0;j<4;j++){
+                    if(datas[j].checked){
+                        selectedAns[i]=datas[j].value;
+                        flag=true;
+                    }
+                }
+                if(!flag)
+                {
+                    selectedAns[i]='empty';
+                }
+            } 
+            for(var j=0;j<ans.length;j++){
+                if(selectedAns[j]===ans[j]){
+                    marks+=1;
+                }
+            }
+            alert(marks);
+            
+        }  
+    </script>
+
+</html>

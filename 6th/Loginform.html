@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            label,input{
+            margin-bottom: 20px;
+        }
+        </style>
+        <script src="Loginform.js"></script>
+    </head>
+    <body>
+        <h1 align='center'>Login Registration From</h1>
+        <div>
+            <h2>Registration</h2>
+            <form>
+                <label for='fristname'>Frist Name:</label>
+                <input type="text" name='fristname' id="fristname"><br>
+
+                <label for='lastname'>Last Name:</label>
+                <input type="text" name='lastname' id="lastname"><br>
+
+                <label for='email'>Email ID:</label>
+                <input type="text" name='email' id="email"><br>
+
+                <label for='phoneno'>Phone no.:</label>
+                <input type="tel" name='phoneno' id="phoneno" maxlength="10"><br>
+
+                <label for='password'>Password:</label>
+                <input type="password" name="password" id="password"><br>
+    
+                <input type="button" value="submit" onclick="onsend()">                
+            </form>
+        </div>
+        
+        <div>
+
+            <h2>Login</h2>
+            <form>
+                <label for='email'>Email ID:</label>
+                <input type="text" name='email' id="loginemail"><br>
+
+                <label for='password'>Password:</label>
+                <input type="password" name="password" id="loginpassword"><br>
+
+                <input type="button" value="login" onclick="onlogin()">
+            </form>
+        </div>
+        <div>
+            <div id="name1"></div>
+            <div id="name2"></div>
+            <div id="email1"></div>
+            <div id="phoneno1"></div>
+            <div id="password1"></div>
+        </div>
+    </body>
+</html>
