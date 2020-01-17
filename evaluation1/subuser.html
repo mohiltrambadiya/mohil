@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p><br>
+    <br>
+    <a href="dashboard.html">Dashboard</a><br>
+    <a href="login.html">Log Out</a><br>
+    <br>
+    <h1>Add user</h1>
+    <br>
+    <input type="text" id="username1" placeholder="name">
+    <input type="text" id="useremail1" placeholder="email">
+    <input type="text" id="userpassword1" placeholder="password">
+    <input type="date" id="birthdate1" placeholder="birthday"><br>
+    <br>
+    <input type="submit" value="Adduser" name="adduser" onclick="onadduser()">
+
+    <table border="1px">
+        <tr>
+            <th>index</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>birthdate</th>
+            <th>age</th>
+            <th>action</th>
+        </tr>
+
+        <tbody id="dynamictable">
+
+        </tbody>
+        <br>
+        <br>
+    </table>
+</body>
+<script src="subuser.js"></script>
+</html>
